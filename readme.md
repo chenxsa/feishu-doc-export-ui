@@ -1,7 +1,7 @@
 本项目旨在解决飞书文档的批量导出。
-- 1、本项目是基于https://github.com/xhnbzdl/feishu-doc-export 改造而成，感谢作者的付出，解决了我的实际问题；
-- 2、本项目全部是用AI来生成，感谢vscode的ai编程助手；
-- 3、本项目是基于.net9+Avalonia做的跨端客户程序，本人只在mac电脑上测试过，其他环境，需要执行dotnet相关的命令。感谢.net 9 + Avalonia,让我这个10年前从c#转到java的开发者，能再用上c#
+- 本项目是基于https://github.com/xhnbzdl/feishu-doc-export 改造而成，感谢作者的付出，解决了我的实际问题；
+- 本项目全部是用AI来生成，感谢vscode的ai编程助手；
+- 本项目是基于.net9+Avalonia做的跨端客户程序，本人只在mac电脑上测试过，其他环境，需要执行dotnet相关的命令。感谢.net 9 + Avalonia,让我这个10年前从c#转到java的开发者，能再用上c#
 
 ## 如何使用
 
