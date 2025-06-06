@@ -1,0 +1,37 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="feishu_doc_export.MainWindow"
+        Width="500" Height="700"
+        Title="飞书文档导出工具">
+    <StackPanel Margin="20" Spacing="10">
+        <TextBlock Text="飞书自建应用AppId："/>
+        <TextBox Name="AppIdBox" Text="cli_a8c82d351c48900e"/>
+        <TextBlock Text="飞书自建应用AppSecret："/>
+        <TextBox Name="AppSecretBox" Text="Y2lbS0uZrHcO1k145uCx9dhtBayPazRd"/>
+        <TextBlock Text="文档导出类型（docx/md/pdf）："/>
+        <ComboBox Name="ExportTypeBox" SelectedIndex="0">
+            <ComboBoxItem>docx</ComboBoxItem>
+            <ComboBoxItem>md</ComboBoxItem>
+            <ComboBoxItem>pdf</ComboBoxItem>
+        </ComboBox>
+        <TextBlock Text="云文档类型（wiki/cloudDoc）："/>
+        <ComboBox Name="DocTypeBox" SelectedIndex="0">
+            <ComboBoxItem>wiki</ComboBoxItem>
+            <ComboBoxItem>cloudDoc</ComboBoxItem>
+        </ComboBox>
+        <TextBlock Text="知识库Id（可选）："/>
+        <TextBox Name="WikiSpaceIdBox" Text="7309405121061109764"/>
+        <TextBlock Text="导出目录："/>
+        <StackPanel Orientation="Horizontal" Spacing="5">
+            <TextBox Name="ExportPathBox" Width="320"/>
+            <Button Name="SelectExportPathBtn" Content="选择..." Width="60"/>
+        </StackPanel>
+        <Button Name="ExportBtn" Content="开始导出" Width="100" HorizontalAlignment="Left"/>
+
+        <TextBlock Text="日志输出：" Margin="0,10,0,0"/>
+        <StackPanel Orientation="Horizontal" Spacing="5">
+            <TextBox Name="LogBox" Height="200" Width="390" AcceptsReturn="True" IsReadOnly="True" Background="#23272e" Foreground="#2d8cf0" FontFamily="Consolas" FontSize="14" BorderBrush="#2d8cf0" BorderThickness="1" Padding="4"/>
+            <Button Name="ClearLogBtn" Content="清空日志" Width="80"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
